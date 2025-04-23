@@ -1,0 +1,263 @@
+body {
+    background-color: rgba(20,33,61,0.90);
+    text-align: center;
+    font-family: "Times New Roman";
+    padding-top: 0px; /* Added this to push content below navbar */
+    margin: 0;
+        color: #E0E0E0;
+}
+#me{
+    padding-top: 70px;
+}
+#butt{
+    background-color: rgba(20,33,61,0.75);
+    text-align: center;
+    border-radius: 40px;
+    height: 25px;
+    width: 85%;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: beige;
+    color: beige;
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    padding: 0 20px; /* Added unit */
+    height: 60px;
+    width: 100%;
+    gap: 15px;
+    background-image: url("C.png");
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding doesn’t increase the width */
+    flex-wrap: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Prevents overflow */
+}
+#navbar a {
+    font-family: "Ubuntu";
+    font-weight: bolder;
+    text-decoration: none;
+    /* Ensures elements remain in place */
+    transition: all 0s ease-in-out;
+    border-radius: 8px;
+    color: beige;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(34,34,59,0.25);
+    border: 2px solid white;
+    width: 80%;
+    border-radius: 30px;
+    padding: -5px;
+    margin: auto;
+     margin-bottom : 25px;
+    z-index: -2;
+}
+
+button{
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    background-color: #F5EBE0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#abc:hover{
+    background-color: #D62976;
+    color: white;
+}
+#def:hover{
+    background-color: #075E54;
+    color: white;
+}
+/*@keyframes colorchange {
+    from {
+        background-color: #F5EBE0;
+    }
+    to {
+        background-color: blueviolet;"/
+    }
+}*/
+
+#navbar a:hover {
+    padding: 10px;
+    color: burlywood;
+    box-shadow: 0 0 0 2px beige; /* Simulates an outline with rounded corners */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Adds a slight background effect */
+}
+#one {
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+#three{
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+#four{
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+#five{
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+#six{
+    font-size: 25px;
+    font-family: "Ubuntu";
+}
+
+h2 {
+    padding-top: 70px;
+    font-family: "Pacifico";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(20,33,61);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 15px;
+        color: #E0E0E0;
+}
+h2:hover{
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+} 
+
+.container, .container2, .container3, .container4, .container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@keyframes img1{
+   0%{margin-left:100%;}
+}
+@keyframes img2{
+   0%{margin-right:100%;}
+}
+
+.profile-pic {
+    background-image: url("Instagram.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 35px;
+    animation: img1 5s linear 1s 1 normal forwards;
+}
+
+.profile-pic2 {
+    background-image: url("WhatsApp.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    animation: img2 5s linear 1s 1 normal forwards;
+}
+
+.profile-pic3 {
+    background-image: url("Bluej.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 normal forwards;
+}
+
+.profile-pic4 {
+    background-image: url("VS Code.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    animation: img2 5s linear 1s 1 normal forwards;
+}
+
+.profile-pic5 {
+    background-image: url("Code.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 normal forwards;
+}
+
+h4 {
+    font-family: "Pacifico";
+}
+
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* Small devices (Mobile phones: 480px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (Tablets: 768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px; /* Increase gap slightly */
+        height: 85px;
+    }
+    #navbar a {
+        font-size: 26px; /* Moderate spacing */
+    }
+    #me {
+        padding-top: 85px; /* Match navbar height */
+    }
+}
+
+/* Desktops (1024px - 1200px) */
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px; /* More spacing for readability */
+        height: 105px;
+    }
+    #me {
+        padding-top: 105px; /* Match navbar height */
+    }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px; /* Extra spacing for large screens */
+        height: 125px;
+    }
+    #me {
+        padding-top: 125px; /* Match navbar height */
+    }
+}

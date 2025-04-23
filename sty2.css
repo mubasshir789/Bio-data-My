@@ -1,0 +1,282 @@
+/* Apply background color */
+body {
+    background-color: rgba(20,33,61,0.90);
+    text-align: center;
+    font-family: "Ubuntu";
+    padding-top: 0px;
+    margin: 0;
+}
+h2{
+    width: 100%;
+    padding-top: 150px;
+}
+#me{
+    padding-top: 70px;
+}
+#butt{
+    background-color: rgba(20,33,61,0.75);
+    text-align: center;
+    border-radius: 40px;
+    height: 25px;
+    width: 85%;
+    font-family: "Ubuntu";
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: beige;
+    color: beige;
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    padding: 0 20px; /* Added unit */
+    height: 60px;
+    width: 100%;
+    gap: 15px;
+    background-image: url("C.png");
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding doesn’t increase the width */
+    flex-wrap: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Prevents overflow */
+    z-index: 1000;
+}
+#navbar a {
+    font-family: "Ubuntu";
+    font-weight: bolder;
+    text-decoration: none;
+    /* Ensures elements remain in place */
+    transition: all 0s ease-in-out;
+    border-radius: 8px;
+    color: beige;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(34,34,59,0.25);
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: -5px;
+    margin: auto;
+     margin-bottom : 25px;
+    z-index: -2;
+        color: #E0E0E0;
+}
+
+#navbar a:hover {
+    padding: 10px;
+    color: burlywood;
+    box-shadow: 0 0 0 2px beige; /* Simulates an outline with rounded corners */
+    background-color: rgba(0, 0, 0, 0.1); /* Optional: Adds a slight background effect */
+}
+/* Styling for headings */
+h2 {
+        
+    font-family: "Pacifico";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(20,33,61);
+        color: #E0E0E0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    line-height: 15px;
+}
+h2:hover{
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+} 
+@keyframes img1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Video Styling */
+.hobby-video {
+    width: 90%;
+    max-width: 500px; /* Adjusts to the same size as images */
+    height: 400px;
+   /* height: auto;*/
+    border-radius: 35px;
+    margin-top: 5px;
+}
+
+/* General styling for all images */
+.profile-pic, .profile-pic3, .profile-pic4 {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 normal forwards;
+    margin-bottom: 15px;
+}
+
+/* Image 2 (HTML) - Different size */
+.profile-pic2 {
+    width: 150px;
+    height: 200px;
+    background-image: url("Html.png");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 reverse;
+}
+.profile-pic4 {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 15px;
+    animation: img1 5s linear 1s 1 reverse;
+    margin-bottom: 15px;
+}
+
+/* Set background images for the other profile pictures */
+.profile-pic {
+    background-image: url("Java.jpg");
+}
+
+.profile-pic3 {
+    background-image: url("CSS.png");
+}
+
+.profile-pic4 {
+    background-image: url("Javas.png");
+}
+
+/* Centering Containers */
+.container, .container2, .container3, .container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+//* Image Container for Two Images */
+.two-images {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Align them vertically */
+    gap: 20px; /* Space between images */
+}
+
+/* Image Container for Three Images */
+.three-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* For Two Images */
+.two-images img {
+    width: 45%; /* Ensures two images fit side by side */
+}
+
+/* For Three Images */
+.three-images img {
+    width: 30%; /* Ensures three images fit side by side */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .two-images,
+    .three-images {
+        flex-wrap: wrap;
+    }
+
+    .two-images img,
+    .three-images img {
+        width: 100%; /* Stack images on smaller screens */
+    }
+}
+/* Responsive: Stack images on smaller screens */
+@media (max-width: 768px) {
+    .image-container {
+        flex-wrap: wrap;
+    }
+    .two-images img, 
+    .three-images img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    #navbar {
+        gap: 25px; /* Increase gap slightly */
+        height: 85px
+    }
+    #navbar a {
+        font-size: 26px;
+    /* Moderate spacing */
+    }
+    #me{
+        padding-top: 80px;
+    }
+}
+
+/* Desktops (1024px - 1200px) */
+@media (min-width: 1024px) {
+    #navbar {
+        gap: 45px; /* More spacing for readability */
+        height: 105px;
+        padding-top: 80px;
+    }
+}
+
+/* Large Screens (Above 1200px) */
+@media (min-width: 1200px) {
+    #navbar {
+        gap: 60px; /* Extra spacing for large screens */
+        height: 125px;
+    }
+}
+
+/* Medium devices (Tablets: 768px - 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Small devices (Mobile phones: 480px - 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (Very small phones: below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
